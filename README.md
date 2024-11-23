@@ -1,6 +1,6 @@
 # Trip Calendar* 
 
-GH-PAGES - 
+GH-PAGES - https://bugagi67.github.io/trip_calendar/
 
 [![Build status](https://ci.appveyor.com/api/projects/status/ss85k49e0vl5wgek?svg=true)](https://ci.appveyor.com/project/bugagi67/trip-calendar)
 
