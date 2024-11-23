@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background-image: url("../assets/images/bg.jpg");
+  background-size: cover;
+}
+
+.tickets_search {
+  width: 320px;
+  margin: 20px auto;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input[type=text],
+input[type=number] {
+  padding: 9px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  text-align: center;
+  min-width: 50px;
+}
+
+button {
+  background: #f00;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button[type=submit] {
+  margin: 0;
+}
+
+button:hover {
+  background: #c00;
+}
+
+.increase, .decrease {
+  width: 30px;
+}
+
+.passengers_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.passengers_container label {
+  display: block;
+}
+
+.passengers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.passengers input {
+  width: 50px;
+  text-align: center;
+  border: none;
+  margin: auto;
+}
+
+input :active, :hover, :focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+input[type="text"]:disabled {
+  background: #dcdcdc;
+}
+
+.passengers_infants {
+  width: 130px;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.dates_wrapper input{
+  width: 100%;
+  border: none;
+  border-radius: 0px;
+}
+
+.departure_return {
+  width: 130px;
+}
+
+.checkbox {
+  width: 41px;
+  height: 41px;
+  accent-color: #f00;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}

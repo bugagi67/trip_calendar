@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>trip_calendar</title>
+</head>
+<body>
+<div class="tickets_search">
+  <h2>Поиск билетов</h2>
+  <form>
+    <label for="from">Откуда:</label>
+    <input type="text" id="from" placeholder="Введите город" required>
+
+    <label for="to">Куда:</label>
+    <input type="text" id="to" placeholder="Введите город" required>
+
+    <div class="passengers_container">
+      <div class="passengers_adults">
+        <label>Взрослые:</label>
+        <div class="passengers">
+          <button type="button" class="decrease">-</button>
+          <input type="number" class="adults" value="1" min="0">
+          <button type="button" class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="passengers_children">
+        <label>Дети до 10 лет:</label>
+        <div class="passengers">
+          <button type="button" class="decrease">-</button>
+          <input type="number" class="children" value="0" min="0">
+          <button type="button" class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="passengers_container">
+      <div class="passengers_infants">
+        <label>Дети до 5 лет:</label>
+        <div class="passengers">
+          <button type="button" class="decrease">-</button>
+          <input type="number" class="infants" value="0" min="0">
+          <button type="button" class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="departure_return">
+        <label for="checkbox">Туда и обратно</label>
+        <div class="checkbox_return">
+          <input type="checkbox" class="checkbox" id="checkbox">
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="dates">
+      <div class="dates_wrapper">
+        <label for="departure">Туда</label>
+        <input type="text" id="departure" placeholder="Дата туда" readonly required>
+      </div>
+
+      <div class="dates_wrapper">
+        <label for="return">Обратно</label>
+        <input type="text" id="return" placeholder="Дата обратно" readonly disabled>
+      </div>
+    </div>
+
+    <button type="submit">Найти</button>
+  </form>
+</div>
+
+</body>
+</html>
